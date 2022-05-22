@@ -10,7 +10,10 @@ UIS.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.Delete then
 		if game.CoreGui:FindFirstChild("Design") then
 		    _G.enabled = false
-            game.CoreGui:FindFirstChild("Design"):Destroy()   
+            game.CoreGui:FindFirstChild("Design"):Destroy()  
+	    if game.CoreGui:FindFirstChild("CoolGuiListThingy") then
+	    	game.CoreGui:FindFirstChild("CoolGuiListThingy"):Destroy()
+	    end
         end 
 	end
 end)
