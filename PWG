@@ -185,7 +185,7 @@ function library:CreateWindow(Name)
 end
 
 local main = library:CreateWindow("Main")
-main:CreateToggle("Esp", function(state)
+main:CreateToggle("Passwords", function(state)
     _G.enabled = state
     if not game.CoreGui:FindFirstChild("CoolGuiListThingy") then
 
